@@ -3,20 +3,88 @@
 
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script type="module" src="/src/js/index.js"></script>
-    <title>Vite App</title>
+    <link rel="stylesheet" href="https://use.typekit.net/tgh4diz.css">
+    <title>Wall of Plant</title>
   </head>
 
-  <body>
-    <div id="app">
-      <h1>Boilerplate to start a good litte project ☀️</h1>
+  <body data-barba="wrapper">
+    <div data-scroll-container>
+      <main data-barba="container" data-barba-namespace="home">
+        <div data-scroll-section data-scroll-id="start-page">
+          <h1><span data-scroll data-scroll-position="top" data-scroll-speed="2" data-scroll-direction="horizontal">the
+              magnificence</span><span data-scroll data-scroll-position="top" data-scroll-speed="-2"
+              data-scroll-direction="horizontal">of
+              Plants</span></h1>
+          <div class="separator"></div>
+          <div class="hero">
+            <h2>The simplicity of Nature</h2>
+            <p>Nowadays, the use of plants in modern interior design is getting more and more popular. Not only making
+              spaces more
+              appealing and alive, they also play a role in your overall health. Indoor plants can be used as accent
+              pieces, to soften
+              areas or even to create a certain expression.</p>
+          </div>
+        </div>
+
+
+        <div data-scroll-section class="images">
+          <a href="/plant/" class="img-block">
+            <h3>Terrarium Plant</h3>
+            <div class="img-inner">
+              <img
+                src="https://images.unsplash.com/photo-1603451670599-68b5019fe7ad?ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8OXwxMTA2NTMxfHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60"
+                alt="Terrarium Plant">
+            </div>
+          </a>
+          <a href="/plant/" class="img-block">
+            <h3>Four-leaf Clover</h3>
+            <div class="img-inner">
+              <img
+                src="https://images.unsplash.com/photo-1606739676895-fdac85044596?ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8NXw3NzU3OTZ8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+                alt="Four-leaf Clover">
+            </div>
+          </a>
+          <a href="/plant/" class="img-block">
+            <h3>Red Maple Leaf</h3>
+            <div class="img-inner">
+              <img
+                src="https://images.unsplash.com/photo-1605278511911-ba9e81239bad?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80"
+                alt="Red Maple Leaf">
+            </div>
+          </a>
+          <a href="/plant/" class="img-block">
+            <h3>Plant in a Jar</h3>
+            <div class="img-inner">
+              <img
+                src="https://images.unsplash.com/photo-1607231333887-fa2eae1bdf85?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=668&q=80"
+                alt="Plant in Jar">
+            </div>
+
+          </a>
+          <a href="/plant/" class="img-block">
+            <h3>Beautful Cactus</h3>
+            <div class="img-inner">
+              <img
+                src="https://images.unsplash.com/photo-1590074754829-545e927bcd57?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80"
+                alt="Beautiful Cactus">
+            </div>
+
+          </a>
+        </div>
+        <div data-scroll-section class="ending">
+          <div data-scroll class="separator last"></div>
+        </div>
+      </main>
+
+      <div class="cursor__inner"></div>
+      <div class="cursor__outer"></div>
+      <div class="cursor__text"></div>
     </div>
 
-    <!-- Custom Cursor -->
-    <div class="cursor__inner"></div>
-    <div class="cursor__outer"></div>
+
   </body>
 
 </html>
