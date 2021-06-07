@@ -1,14 +1,26 @@
 $colors: (
-	"black": #131112,
-	"white": #ffffff,
-	"bg": #dbdbdb,
+	"text": #131112,
+	"bg": #ffffff,
+	// "bg": #dbdbdb,
 	"primary": #dac9b0,
 	"secondary": #e0b75c,
 );
 
 :root {
+	--font-sans: neue-haas-grotesk-display, sans-serif;
 	@each $c, $v in $colors {
 		--clr-#{$c}: #{$v};
 	}
-	--font-sans: neue-haas-grotesk-display, sans-serif;
+}
+
+[data-theme="light"] {
+	@each $c, $v in $colors {
+		--clr-#{$c}: #{$v};
+	}
+}
+[data-theme="dark"] {
+	--clr-text: #fff;
+	--clr-bg: #131112;
+	--clr-primary: #e0b75c;
+	--clr-secondary: #dac9b0;
 }
