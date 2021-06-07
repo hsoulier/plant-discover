@@ -56,6 +56,7 @@
 	@media screen and (min-width: 769px) {
 		margin-bottom: 0;
 		padding-top: 5vw;
+		padding-bottom: 5vw;
 	}
 }
 .separator {
@@ -67,9 +68,10 @@
 	margin-bottom: 5vw;
 	&.last {
 		// margin-bottom: 0;
-		margin-bottom: 10vw;
+		margin-bottom: 5vw;
 		@media screen and (min-width: 769px) {
 			margin-top: 0;
+			margin-bottom: 0;
 		}
 	}
 	background-color: var(--clr-text);
