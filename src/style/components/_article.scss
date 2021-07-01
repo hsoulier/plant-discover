@@ -23,6 +23,18 @@
 			margin-left: auto;
 			margin-right: auto;
 			padding-bottom: 8vw;
+			&-text {
+				display: grid;
+				grid-template-columns: 100%;
+				gap: 1rem;
+				@media screen and (min-width: 769px) {
+					grid-template-columns: repeat(2, minmax(300px, 80ch));
+				}
+				@media screen and (min-width: 1060px) {
+					font-size: 1.2rem;
+					gap: clamp(2vw, 2rem, 5vw);
+				}
+			}
 		}
 
 		h2 {
@@ -30,11 +42,8 @@
 			font-size: clamp(2rem, 2vw, 5rem);
 		}
 
-		h2 + p {
+		h2 + * {
 			margin-top: 2rem;
-		}
-		p + p {
-			margin-top: 1rem;
 		}
 
 		a {
