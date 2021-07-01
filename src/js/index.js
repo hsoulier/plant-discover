@@ -76,15 +76,23 @@ class App {
 				{
 					name: "opacity-transition",
 					once({ next }) {
-						// console.log(next)
+						return gsap.fromTo(
+							next.container,
+							{
+								opacity: 0,
+							},
+							{
+								opacity: 1,
+							}
+						)
 					},
-					leave(data) {
-						return gsap.to(data.current.container, {
+					leave({ current }) {
+						return gsap.to(current.container, {
 							opacity: 0,
 						})
 					},
-					enter(data) {
-						return gsap.from(data.next.container, {
+					enter({ next }) {
+						return gsap.from(next.container, {
 							opacity: 0,
 						})
 					},
